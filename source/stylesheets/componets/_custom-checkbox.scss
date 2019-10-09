@@ -1,0 +1,29 @@
+.form-check-input.custom-checkbox {
+  + label {
+    line-height: 1rem;
+    &:before {
+      position: absolute;
+      display: inline;
+      content: "";
+      left: 0;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+      pointer-events: none;
+      background-color: theme-color("secondary");
+    }
+  }
+  &:checked + label {
+    &:after {
+      position: absolute;
+      display: inline;
+      content: "\2713";
+      left: 1px;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+      color: theme-color("primary");
+    }
+  }
+}
+//記得加.form-check-input在input上

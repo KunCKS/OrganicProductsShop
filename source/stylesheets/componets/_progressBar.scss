@@ -1,0 +1,70 @@
+.progress-Steps {
+  $circle-size: 20px;
+  $steps-circle-color: theme-color("secondary");
+  $steps-bg-color: theme-color("primary");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  .steps-circle {
+    width: $circle-size;
+    height: $circle-size;
+    border: 1px solid $steps-circle-color;
+    border-radius: $circle-size;
+    background-color: $steps-bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Material Icons";
+    z-index: 2;
+    position: relative;
+  }
+  &:after {
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: $steps-circle-color;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    // transform: translateY(-50%);
+  }
+  .steps-circle.active {
+    &:after {
+      display: block;
+      content: "";
+      width: $circle-size - 6px;
+      height: $circle-size - 6px;
+      border-radius: $circle-size;
+      background-color: $steps-circle-color;
+    }
+  }
+  .steps-circle.completed {
+    font-size: 1rem;
+    background-color: $steps-circle-color;
+    color: $steps-bg-color;
+  }
+  //theme
+  &.progress-Steps-dark {
+    .steps-circle {
+      border-color: $steps-bg-color;
+      background-color: $steps-bg-color;
+    }
+    &:after {
+      background-color: $steps-bg-color;
+    }
+    .steps-circle.active {
+      &:after {
+        display: block;
+        background-color: $steps-bg-color;
+      }
+    }
+    .steps-circle.completed {
+      font-size: 1rem;
+      background-color: $steps-bg-color;
+      color: $steps-circle-color;
+    }
+  }
+}

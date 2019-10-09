@@ -1,0 +1,20 @@
+.form-rectangle {
+  background-color: theme-color("secondary");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 60px;
+  position: relative;
+  .form-icon-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: theme-color("primary");
+  }
+  .form-input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: transparent;
+    border: none;
+  }
+}

@@ -1,0 +1,60 @@
+.header {
+  .header-img {
+    height: 496px;
+  }
+  .header-logo-text {
+    position: absolute;
+    top: 8.5%;
+    right: 3.5%;
+  }
+  .rectangle-banner-section {
+    margin-top: -70px;
+    .rectangle-banner-wrap {
+      height: 256px;
+      z-index: 1;
+      text-decoration: none;
+      color: #fff;
+      transition: color 1s;
+      overflow: hidden;
+      .rectangle-banner-img {
+        z-index: -2;
+        filter: blur(5px);
+        transition: filter 1s;
+      }
+      .rectangle-banner-text {
+        font-size: 24px;
+        letter-spacing: 8px;
+      }
+      .rectangle-banner-overlay {
+        background-color: rgba(#242424, 0.7);
+        z-index: -1;
+        opacity: 0.7;
+        transition: background-color 1s;
+      }
+      &:hover {
+        color: $primary;
+        .rectangle-banner-overlay {
+          background-color: theme-color('warning');
+        }
+        .rectangle-banner-text {
+          font-weight: bolder;
+        }
+        .rectangle-banner-img {
+          filter: none;
+        }
+      }
+      &.active {
+        color: $primary;
+        .rectangle-banner-overlay {
+          background-color: theme-color('warning');
+        }
+        .rectangle-banner-text {
+          font-weight: bolder;
+        }
+        .rectangle-banner-img {
+          filter: none;
+        }
+      }
+    }
+  }
+}

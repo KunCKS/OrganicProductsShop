@@ -1,0 +1,11 @@
+.orderSummary {
+  @include media-breakpoint-up(md) {
+    .orderSummary-wrap {
+      background-color: theme-color("primary");
+      color: #fff !important;
+      .orderSummary-title {
+        background-color: theme-color("primary") !important;
+      }
+    }
+  }
+}

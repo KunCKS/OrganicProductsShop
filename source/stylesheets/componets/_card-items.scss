@@ -1,0 +1,61 @@
+//需搭配 BS 的 card 元件
+.card-items {
+  border: 0;
+  .items-img-top {
+    .items-tag {
+      color: #fff;
+      background-color: $primary;
+      padding: 10px 9px;
+      letter-spacing: 5px;
+      top: 0;
+      left: 7%;
+    }
+    height: 315px;
+    .items-favorite {
+      position: absolute;
+      color: $primary;
+      top: 6.5%;
+      right: 7%;
+    }
+  }
+  .items-title {
+    margin-bottom: 0;
+    font-size: 20px;
+    .items-price {
+      font-weight: 500;
+    }
+  }
+  .card-footer {
+    background-color: $secondary;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+//interact
+.ui-display {
+  cursor: pointer;
+  .checkbox,
+  .ui-hidden {
+    display: none;
+  }
+  .checkbox:checked {
+    ~ .ui-show {
+      display: none;
+    }
+    ~ .ui-hidden {
+      display: block;
+    }
+  }
+}
+
+// favorite model
+// <div class="items-favorite">
+//   <label>
+//     <input type="checkbox" />
+//     <i class="material-icons"> favorite_border </i>
+//     <i class="material-icons">
+//       favorite
+//     </i>
+//   </label>
+// </div>

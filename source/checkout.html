@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="keyword" content="" />
+    <meta property="og:title" content="現在就開始保養吧！ | ASin Organic" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="" />
+    <title>ASin Organic</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="stylesheets/all.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light bg-white py-4 px-0">
+        <button
+          class="navbar-toggler text-primary border-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="material-icons">
+            menu
+          </i>
+        </button>
+        <a class="navbar-brand d-md-block d-none" href="index.html">
+          <img
+            src="img/Logo.svg"
+            alt="Logo"
+            style="width: 220px;height: 40px;"
+          />
+        </a>
+        <a class="navbar-brand d-md-none d-block" href="index.html">
+          <img
+            src="img/Logo_transparent.svg"
+            alt="Logo"
+            style="width: 114px;height: 18px;"
+          />
+        </a>
+        <a href="cart.html" class=" d-md-none d-block text-primary"
+          ><i class="material-icons">
+            shopping_cart
+          </i></a
+        >
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-md-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"
+                >首頁 <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item ml-md-5">
+              <a class="nav-link" href="product.html">保養品</a>
+            </li>
+            <li class="nav-item ml-md-5">
+              <a class="nav-link" href="login.html">登入</a>
+            </li>
+            <li class="nav-item ml-md-5 d-md-block d-none">
+              <a class="nav-link text-primary" href="cart.html"
+                ><i class="material-icons">
+                  shopping_cart
+                </i></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <section>
+      <div class="container">
+        <div class="row mt-md-4 mb-md-6 justify-content-center">
+          <div class="col-md-6">
+            <div
+              class="bg-primary text-secondary pt-5 px-5 pb-3 negative-row-margin mx-lg-0"
+            >
+              <form>
+                <div class="form-row">
+                  <div class="col-6">
+                    <h1 class="checkout-title">運送</h1>
+                  </div>
+                  <div class="col-6 d-flex">
+                    <div class="progress-Steps w-100">
+                      <div class="steps-circle active"></div>
+                      <div class="steps-circle"></div>
+                      <div class="steps-circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="lastName">姓氏</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="lastName"
+                      name="lastName"
+                      placeholder="王"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="firstName">名字</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      name="firstName"
+                      placeholder="小明"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPhone">電話</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="inputPhone"
+                    name="inputPhone"
+                    placeholder="0912-345678"
+                  />
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCounty">地址 </label>
+                    <select id="inputCounty" class="form-control">
+                      <option selected>台北市</option>
+                      <option>台中市</option>
+                      <option>高雄市</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6 d-md-flex align-items-end">
+                    <select id="inputState" class="form-control">
+                      <option selected>信義區</option>
+                      <option>大安區</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputAddress"
+                      placeholder="羅斯福路1000號"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="negative-row-margin mx-lg-0">
+              <a
+                href="checkout-pay.html"
+                class="btn btn-warning btn-lg d-block p-4 text-primary font-weight-bold"
+              >
+                下一步
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 d-md-block d-none">
+            <div class="card text-primary">
+              <div class="card-header bg-secondary">
+                <h2 class="text-center">訂單摘要</h2>
+              </div>
+              <div class="card-body">
+                <div class="mb-2 d-flex">
+                  <span class="mb-0">小計</span>
+                  <span class="ml-auto">NT$ 2,700</span>
+                </div>
+                <div class="mb-4 d-flex">
+                  <span class="mb-0">運費</span>
+                  <span class="ml-auto">NT$ 300</span>
+                </div>
+                <div class="d-flex font-weight-bold">
+                  <span class="mb-0 h5">總計</span>
+                  <span class="ml-auto h5">NT$ 3,000</span>
+                </div>
+              </div>
+            </div>
+            <div class="card text-primary">
+              <div class="card-header bg-secondary">
+                <h2 class="text-center">訂單摘要</h2>
+              </div>
+              <div class="card-body">
+                <div class="d-flex flex-grow-1 py-3 text-primary">
+                  <div
+                    class="bg-cover mr-3  flex-grow-1"
+                    style="background-image: url(https://images.unsplash.com/photo-1566814534947-46a09bcbb88c?ixlib=rb-1.2.1&auto=format&fit=crop&w=919&q=80);"
+                  ></div>
+                  <div class="d-flex align-items-center">
+                    <p class="mb-0 flex-fill">
+                      <span>活膚淨萃精華</span> <span>(2)</span>
+                      <br />
+                      <span>NT$ 900</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex flex-grow-1 py-3 text-primary">
+                  <div
+                    class="bg-cover mr-3  flex-grow-1"
+                    style="background-image: url(https://images.unsplash.com/photo-1566814534947-46a09bcbb88c?ixlib=rb-1.2.1&auto=format&fit=crop&w=919&q=80);"
+                  ></div>
+                  <div class="d-flex align-items-center">
+                    <p class="mb-0 flex-fill">
+                      <span>活膚淨萃精華</span> <span>(2)</span>
+                      <br />
+                      <span>NT$ 900</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex flex-grow-1 py-3 text-primary">
+                  <div
+                    class="bg-cover mr-3  flex-grow-1"
+                    style="background-image: url(https://images.unsplash.com/photo-1566814534947-46a09bcbb88c?ixlib=rb-1.2.1&auto=format&fit=crop&w=919&q=80);"
+                  ></div>
+                  <div class="d-flex align-items-center">
+                    <p class="mb-0 flex-fill">
+                      <span>活膚淨萃精華</span> <span>(2)</span>
+                      <br />
+                      <span>NT$ 900</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="bg-primary">
+        <div class="container">
+          <div class="row justify-content-center no-gutters">
+            <div class="col-10">
+              <div class="row d-flex justify-content-md-around py-2">
+                <div class="col-md-6 py-4 d-flex align-items-center">
+                  <!-- <img src="img/logo-light.svg" alt="" class="logo-icon" /> -->
+                  <!-- <i class="fas fa-drafting-compass text-dark"></i> -->
+                  <span class="text-white h4 mb-0"
+                    >訂閱最新優惠消息</span
+                  >
+                </div>
+                <div class="col-md-6 py-4 d-flex align-items-center">
+                  <div class="form-rectangle w-100">
+                    <label
+                      class="material-icons form-icon-left"
+                      for="subsribeEmail"
+                    >
+                      email
+                    </label>
+                    <input
+                      type="email"
+                      class="form-input w-100"
+                      aria-label="subsribe"
+                      name="subsribeEmail"
+                      id="subsribeEmail"
+                    />
+                    <button
+                      class="btn btn-warning btn-lg border-0 d-flex align-items-center text-primary align-self-stretch"
+                      type="submit"
+                    >
+                      <i class="material-icons">arrow_forward</i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-secondary py-4">
+        <div class="container">
+          <div class="row justify-content-center no-gutters">
+            <div class="col-10">
+              <div class="row justify-content-around">
+                <div
+                  class="col-md-6 d-flex flex-column justify-content-between"
+                >
+                  <img
+                    src="img/Logo_transparent.svg"
+                    alt=""
+                    class="footerLogo"
+                  />
+                  <span class="text-dark mt-5 font-Hel">
+                    77-1234-5678<br />ASinOrganic@email.com<br />777
+                    台北市台中區高雄路 100 號
+                  </span>
+                </div>
+                <div class="col-md-6 d-md-flex d-none">
+                  <img
+                    src="img/保養就從今天開始.svg"
+                    alt=""
+                    style="width: 60px;"
+                    class="ml-auto"
+                  />
+                </div>
+              </div>
+              <div class="row justify-content-around mt-4">
+                <div class="col-md-6">
+                  <a href="#" class="h2 mb-0 text-decoration-none"
+                    >
+                    <i class="fas fa-at "></i>
+                  </a>
+                  <a href="#" class=" ml-2 h2 mb-0 text-decoration-none"
+                    >
+                    <i class="fab fa-facebook-square "></i>
+                  </a>
+                </div>
+                <div class="col-md-6 d-flex mt-md-0 mt-4">
+                  <p
+                    class="text-dark ml-md-auto align-self-center mb-0 font-times"
+                  >
+                    © 2019 ASinOrganic* All Rights Reserved
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/vendor.js"></script>
+  </body>
+</html>

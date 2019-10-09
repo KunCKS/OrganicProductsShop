@@ -1,0 +1,30 @@
+.cart-list {
+  .cart-title {
+    font-size: 24px;
+  }
+  .cart-items {
+    & + .cart-items {
+      border-top: 1px solid theme-color("secondary");
+    }
+    .cart-items-img {
+      width: 110px;
+      height: 110px;
+    }
+    .cart-items-price {
+      border-top: 1px solid theme-color("secondary");
+      border-bottom: 1px solid theme-color("secondary");
+      text-align: end;
+    }
+    @include media-breakpoint-up(md) {
+      .cart-items-price {
+        border-top: none;
+        border-bottom: none;
+      }
+    }
+  }
+  .cart-items-amount {
+    width: 48px;
+    height: 48px;
+    border-color: theme-color("secondary");
+  }
+}

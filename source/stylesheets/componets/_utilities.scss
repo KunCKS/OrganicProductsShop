@@ -1,0 +1,55 @@
+.logo-icon {
+  width: 40px;
+  height: 40px;
+}
+.font-times {
+  font-family: Times !important;
+}
+.font-Hel {
+  font-family: Helvetica Neue !important;
+}
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+.expandToside {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.vertical-write {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+}
+input {
+  &::-webkit-input-placeholder {
+    color: $primary;
+  }
+}
+.form-control,
+.form-control-lg {
+  background-color: $secondary;
+  background-clip: border-box;
+}
+.negative-row-margin {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+//修正invoice頁面顏色問題
+.invoice {
+  .list-group-item {
+    background-color: $primary !important;
+    color: $secondary !important;
+    &.active {
+      background-color: $secondary !important;
+      color: $primary !important;
+    }
+  }
+}
+.footerLogo {
+  width: 80px;
+  @include media-breakpoint-up(md) {
+    width: 120px;
+  }
+}

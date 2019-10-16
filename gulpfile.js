@@ -21,7 +21,8 @@ gulp.task("vendorJS", function() {
   return gulp
     .src([
       "./node_modules/jquery/dist/jquery.slim.min.js",
-      "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+      './source/js/all.js'
     ])
     .pipe(concat("vendor.js"))
     .pipe(gulp.dest("./public/js"));
@@ -79,5 +80,15 @@ gulp.task(
     "sass",
     "vendorJS",
     gulp.parallel("browserSync", "watch")
+  )
+);
+
+gulp.task(
+  "build",
+  gulp.series(
+    "clean",
+    "copy",
+    "sass",
+    "vendorJS"
   )
 );
